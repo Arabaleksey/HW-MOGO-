@@ -1,0 +1,16 @@
+.partners {
+background-color: #F8F8F8;
+padding: 42px 0px;
+    &__container {
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__picture {
+        display: flex;
+        align-items: center;
+    }
+}

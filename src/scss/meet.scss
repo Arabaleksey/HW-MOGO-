@@ -1,0 +1,72 @@
+.meet {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__picture {
+
+    }
+
+    &__img{
+        position: relative;
+        &:hover:after{
+            content:"";
+            position:absolute;
+            background-image: url('../img/meet-bcg.png');
+            left: -16px;
+            top: -16px;
+            width: 100%;
+            height: 100%;
+        }
+        & > .meet__icons{
+            display: none;
+        }
+        &:hover > .meet__icons{
+            display: block;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__links{
+        z-index: 1;
+        display: flex;
+        position:absolute;
+        top: 186px;
+        left: 90;
+    }
+
+    &__link{
+        padding-right: 1px;
+        &:last-child{
+            padding-right: 0;
+        }
+    }
+
+    &__photo{
+        vertical-align: middle;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        padding-bottom: 90px;
+    }
+
+    &__name {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 24px;
+        color:#2D3033;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__job {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 18px;
+        color:#2D3033;
+    }
+}

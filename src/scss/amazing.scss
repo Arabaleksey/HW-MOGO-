@@ -1,0 +1,49 @@
+.amazing {
+    &__hr {
+        margin-bottom: 87px;
+    }
+
+    &__wrapper {
+        display: flex;
+    justify-content: space-between;
+
+        &_one {
+            margin-bottom: 170px;
+        }
+        &_two {
+            padding-bottom: 105px;
+        }
+    }
+
+    &__item {
+        display: flex;
+    justify-content: space-between;
+    }
+
+    &__img {
+        align-self:flex-start;
+        margin-right: 30px;
+        flex: 0 0 70px;
+    }
+
+    &__box {
+        padding-top: 18px;
+        flex: 1 1 auto;
+    }
+
+    &__box-title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+    color: #2D3033;
+    margin-bottom: 35px;
+    }
+
+    &__box-subtitle {
+        font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    color: #2D3033;
+    }
+}
+

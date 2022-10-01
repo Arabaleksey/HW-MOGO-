@@ -1,0 +1,63 @@
+.review {
+background-color: #F8F8F8;
+padding: 42px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between; 
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        &_one {
+        }
+    }
+
+    &__img {
+        margin-right: 30px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction:column;
+    }
+
+    &__text {
+        font-family: 'Raleway';
+        font-size: 24px;
+        font-weight: 500;
+        width: 770px;
+        color: #A9AFB1;
+        margin-bottom: 40px;
+        font-style: italic;
+    }
+
+    &__block {
+        display: flex;
+    }
+
+    &__hr {
+        width: 70px;
+        border:none;
+        border-top: 4px solid #F38281;
+        margin-right: 56px;
+        display: flex;
+        align-self:center;
+    }
+
+    &__name {
+        font-family:'Kaushan Script';
+        font-weight: 400;
+        font-size: 30px;
+        color:#000;
+    }
+	&__img-go {
+        display: block;
+	}
+    
+}
+.review__two{
+    padding: 84px 0px;
+}
+
+
