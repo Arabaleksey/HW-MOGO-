@@ -73,6 +73,9 @@
         &:active:after{
             width: 85px;
         }
+        &:hover{
+            color:#F4BF87;
+        }
     }
     &__icon {
         align-self: center;
@@ -96,7 +99,9 @@
         align-self: center;
         align-items: center;
         display: flex;
-        &:hover > .intro__search-txt{
+        cursor: pointer;
+        &:active > .intro__search-txt{
+            position:static;
             width: 240px;
             padding: 0 6px;
         }

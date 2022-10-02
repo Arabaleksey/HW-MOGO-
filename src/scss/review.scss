@@ -1,63 +1,106 @@
 .review {
-background-color: #F8F8F8;
-padding: 42px 0;
+    background-color: #F8F8F8;
+    padding: 42px 0;
+    
+        &__container {
+            position: relative;
+            max-width: 1170px;
+            margin: 0 auto
+        }
+        &__wrapper{
+            display: flex
+        }
+    
+        &__img {
+            margin-right: 30px;
+            padding-left: 100px;
+        }
+    
+        &__info {
+            display: flex;
+            flex-direction:column;
 
-    &__wrapper {
-        display: flex;
-        justify-content: space-between; 
-    }
-    &__box {
-        display: flex;
-        justify-content: space-between;
-        &_one {
+        }
+    
+        &__text {
+            font-family: 'Raleway';
+            font-size: 24px;
+            font-weight: 500;
+            width: 770px;
+            color: #A9AFB1;
+            margin-top:0;
+            font-style: italic;
+            
+        }
+    
+        &__block {
+            display: flex;
+            padding-top: 40px;
+        }
+    
+        &__hr {
+            width: 70px;
+            border:none;
+            border-top: 4px solid #F38281;
+            margin-right: 56px;
+            display: flex;
+            align-self:center;
+            margin: 0;
+        }
+    
+        &__name {
+            font-family:'Kaushan Script';
+            font-weight: 400;
+            font-size: 30px;
+            color:#000;
+            padding-left: 56px;
+            margin:0;
+        }
+        &__img-go {
+            display: block;
+        }
+        
+        &__prev-img{
+            margin: 0 auto;
+        }
+        &__prev, &__next{
+            cursor: pointer;
+            position: absolute;
+            top:50%;
+            margin-top:-22px;
+            padding-top: 5px;
+            padding-right: 5px;
+            transition: 0.5s ease;
+            border-radius: 0 3px 3px 0;
+            &:hover{
+                background-color: rgba(0,0,0,0.8);
+            }
+        }
+        &__next{
+            right: 0;
+            border-radius:3px 0 0 3px;
+            padding-left: 3px;
+            padding-right:0px;
         }
     }
-
-    &__img {
-        margin-right: 30px;
+    .fade{
+        -webkit-animation-name:fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
     }
-
-    &__info {
-        display: flex;
-        flex-direction:column;
+    @-webkit-keyframes fade{
+        from{opacity: .4}
+        to {opacity: 1}
     }
-
-    &__text {
-        font-family: 'Raleway';
-        font-size: 24px;
-        font-weight: 500;
-        width: 770px;
-        color: #A9AFB1;
-        margin-bottom: 40px;
-        font-style: italic;
+    @keyframes fade{
+        from{opacity: .4}
+        to {opacity: 1}
     }
-
-    &__block {
-        display: flex;
-    }
-
-    &__hr {
-        width: 70px;
-        border:none;
-        border-top: 4px solid #F38281;
-        margin-right: 56px;
-        display: flex;
-        align-self:center;
-    }
-
-    &__name {
-        font-family:'Kaushan Script';
-        font-weight: 400;
-        font-size: 30px;
-        color:#000;
-    }
-	&__img-go {
-        display: block;
-	}
     
-}
-.review__two{
-    padding: 84px 0px;
-}
-
-
+    // .review__two{
+    //     padding: 84px 0px;
+    // }
+    
+    
+    

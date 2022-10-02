@@ -53,6 +53,13 @@
         justify-content:flex-end;
     }
 
+    &__drop{
+        cursor: pointer;
+        &:active > .service__box-text{
+            display: block;
+
+        }
+    }
     &__box-text {
         display: none;
         font-family: 'Raleway';

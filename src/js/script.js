@@ -1,19 +1,28 @@
-// let search = document.querySelector(".intro__icon_search")
-// let menuSearch = document.querySelector(".intro__search-txt")
+// СЛАЙДЕРЫ
 
-// search.addEventListener("click", mobileMenu);
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n){
+    showSlides(slideIndex += n);
+}
 
-// function mobileMenu() {
-//     search.classList.toggle("active");
-//     menuSearch.classList.toggle("active");
-// }
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-let arrow = document.querySelector(".service__drop")
-let drop = document.querySelector(".service__box-text")
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("review__box");
 
-arrow.addEventListener("click", dropDown);
+    if (n > slides.length){
+        slideIndex = 1
+    }
+    if (n < 1){
+        slideIndex=slides.length
+    }
+    for (i=0; i <slides.length; i++){
+        slides[i].style.display= "none";
+    }
 
-function dropDown() {
-    arrow.classList.toggle("active");
-    drop.classList.toggle("active");
+    slides[slideIndex-1].style.display = "block";
 }
