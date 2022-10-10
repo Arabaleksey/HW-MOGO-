@@ -85,10 +85,14 @@
 
     &__form {
         display: flex;
+        width: 100%;
+        max-width: 370px;
+        position: relative;
     }
 
     &__input {
-        width: 234px;
+        display: inline-block;
+        width: 370px;
         height: 55px;
         border: 1px solid #C6CBCD;
         color:#C6CBCD;
@@ -96,6 +100,7 @@
         font-weight: 400;
         font-size: 18px;
         padding: 0px 10px;
+        padding-right:142px;
         &::placeholder{
         color:#C6CBCD;
         font-family: 'Raleway';
@@ -106,21 +111,24 @@
         &:focus{
             outline:1px solid #a1a5a6;
         }
+    
     }
 
     &__btn {
         width: 132px;
         height: 55px;
-        border: 1px solid #C6CBCD;
+        border: 0;
         color:#fff;
         background-color: #95E1D3;
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 18px;
+        margin-left:-132px;
         cursor: pointer;
         &:active{
             border:1px solid #a1a5a6;
         }
+        
     }
 
     &__name {

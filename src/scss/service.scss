@@ -8,19 +8,22 @@
         justify-content: space-between;
         padding-bottom: 114px;
     }
+    &__img-block{
+        flex: 0 0 483;
+    }
 
     &__img {
         margin-right: 30px;
+
     }
 
     &__item {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
 
     &__ability {
-        margin-bottom: 22px;
+        margin-bottom: 30px;
         &:last-child{
             margin-bottom: 0;
         }
@@ -35,10 +38,14 @@
     }
 
     &__icon {
-        margin-right: 40px;
         margin-left: 18px;
+        margin-right: 20px;
     }
-
+    &__naming{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
     &__box-title {
         font-family: 'Raleway';
         font-weight: 700;
@@ -50,27 +57,34 @@
         display: flex;
         cursor:pointer;
         padding-right: 19px;
+        padding-left:19px;
         justify-content:flex-end;
-    }
+        transition:0.3s;
 
+    }
     &__drop{
         cursor: pointer;
-        &:active > .service__box-text{
+        &.active > .service__box-text{
             display: block;
+        }&.active .service__arrow{
+            transform: rotate(-180deg);
 
         }
+        
+
     }
+
     &__box-text {
-        display: none;
         font-family: 'Raleway';
         font-weight: 400;
         font-size: 18px;
         color: #2D3033;
-        padding-left: 22px;
-        padding-right: 85px;
         border: 1px solid #C6CBCD;
-        &:active{
-            display: block;
-        }
+        border-top: none;
+        padding: 10px 85px 10px 22px;
+        position: relative;
+        display: none;
+        max-height: 155px;
+
     }
 }

@@ -100,11 +100,12 @@
         align-items: center;
         display: flex;
         cursor: pointer;
-        &:active > .intro__search-txt{
-            position:static;
+        &.open > .intro__search-txt{
+            position: static;
             width: 240px;
-            padding: 0 6px;
+            padding: 0 10px;
         }
+    
     }
 
     &__search-txt {
@@ -116,7 +117,6 @@
         transition:0.4s;
         line-height: 30px;
         width: 0;
-        transition:0.4s;
         font-family: 'Raleway', sans-serif;
         font-weight: 500;
         font-size: 14px;
@@ -136,6 +136,7 @@
         line-height: 176px;
         color: #FFF;
         text-transform: uppercase;
+        height: 345px;
     }
 
     &__hr {
@@ -163,4 +164,62 @@
         }
     }
 
+// SLIDER----------------------------------------------------
+&__slide{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    cursor:pointer;
+    margin-left: -28px;
+}
+&__wrapper{
+    position: relative;
+    min-height: 728px;
+}
+&__hr-slide1{
+    width: 70px;
+    border:none;
+    border-top: 4px solid #fff;
+    margin-right: 56px;
+    position: relative;
+    top: 4px;
+
+}
+&__hr-slide2{
+    width: 270px;
+    border:none;
+    border-top: 4px solid #fff;
+    margin-right: 56px;
+}
+&__dot{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    &.slick > .intro__hr-slide1{
+        border-top: 4px solid #F38281;
+    }
+}
+
+&__text-slide{
+    text-align: start;
+    padding-top: 15px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+&__text-slide_span{
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+
+// SWIPER_----------------------------
+&__swiper{
+    width: 1170px;
+
+}
 }

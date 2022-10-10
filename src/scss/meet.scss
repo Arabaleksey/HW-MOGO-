@@ -3,12 +3,7 @@
         display: flex;
         justify-content: space-between;
     }
-    &__imgimg{
-        stroke:aqua;
-    }
-    &__picture {
 
-    }
 
     &__img{
         position: relative;
@@ -45,6 +40,22 @@
         }
     }
 
+    &__svg{
+        rect{
+            transition:0.3s;
+        }
+        path{
+            transition: 0.3s;
+        }
+        &:hover{
+        rect{
+            fill:#F38281;
+        }
+        path{
+            fill:#fff;
+        }
+    }
+    }
     &__photo{
         vertical-align: middle;
     }

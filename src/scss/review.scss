@@ -10,7 +10,6 @@
         &__wrapper{
             display: flex
         }
-    
         &__img {
             margin-right: 30px;
             padding-left: 100px;
@@ -30,7 +29,12 @@
             color: #A9AFB1;
             margin-top:0;
             font-style: italic;
-            
+        }
+        &__text_sec{
+            color:rgb(72, 117, 98);
+        }
+        &__text_third{
+            color:rgb(83, 57, 148);
         }
     
         &__block {
@@ -98,9 +102,9 @@
         to {opacity: 1}
     }
     
-    // .review__two{
-    //     padding: 84px 0px;
-    // }
-    
-    
+.review__box_second{
+   padding: 30px;
+}
+
+
     
