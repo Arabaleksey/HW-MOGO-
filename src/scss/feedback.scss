@@ -3,7 +3,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding-bottom: 70px;
 
     &__designation {
         padding-bottom: 35px;
@@ -12,62 +11,63 @@
 
     &__hr {
         margin-top: 30px;
+        margin-bottom: 60px;
     }
 
-    &__box {
-
-        &_one {
+		&__wrapper {
             display: flex;
-            margin-bottom: 72px;
-            justify-content: space-between;
-        }
+            flex-wrap: wrap;
+            margin: 0 -30px;
+		}
 
-        &_two {
+		&__column {
+            flex: 0 1 550px;
             display: flex;
-            justify-content: space-between;
-        }
-    }
-    &__img{
-        align-self: flex-start;
-        padding-right: 50px;
-    }
+            margin-bottom: 85px;
+            padding: 0 30px;
+		}
 
-    &__item {
-        display: flex;
-        max-width: 550px;
-    }
+		&__img {
+            margin-right: 50px;
+		}
 
-    &__wrap {
-        display: flex;
-        flex-direction: column;
-    }
+		&__box {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+            width: 369px;
+		}
 
-    &__name {
-        font-family: 'Raleway';
-        font-weight: 700;
-        font-size: 24px;
-        margin-bottom: 15px;
-        color: #2D3033;
-    }
+		&__name {
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #2D3033;
+		}
 
-    &__job {
-        font-family: 'Raleway';
-        font-weight: 400;
-        font-size: 18px;
-        color: #2D3033;
-    }
-    &__wrap-hr{
-        border:none;
-        border-top: 4px solid #F38281;
-        width: 70px;
-        margin-top: 32px;
-        margin-bottom: 50px;
-    }
+		&__job {
+            font-family: 'Raleway';
+            font-weight: 400;
+            font-size: 18px;
+            color: #2D3033;
+		}
 
-    &__text {
-        font-family: 'Raleway';
-        font-weight: 400;
-        font-size: 18px;
-        color: #2D3033;
-    }
+		&__column-hr {
+            border:none;
+            border-top: 4px solid #F38281;
+            width: 70px;
+            margin-top: 32px;
+            margin-bottom: 50px;
+		}
+
+		&__text {
+            font-family: 'Raleway';
+            font-weight: 400;
+            font-size: 18px;
+            color: #2D3033;
+		}
 }
+
+
+

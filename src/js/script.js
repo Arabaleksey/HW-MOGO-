@@ -38,20 +38,6 @@ drop.forEach((elem)=>{
 
 
 
-// SEARCH INPUT-------------
-// let search = document.querySelectorAll('.intro__search-box');
-
-// search.forEach((elem)=>{
-//   elem.addEventListener('click',()=>{
-//       elem.parentNode.querySelector('.intro__search-box').classList.toggle('open')
-//     //   clossets
-//   })
-// })
-
-
-// let elem = document.querySelector('#child');
-// let parent = elem.closest('.www');
-
 
 let search = document.querySelector(".intro__search-box");
 
@@ -60,13 +46,6 @@ search.addEventListener("click", searchMenu);
 function searchMenu() {
     search.classList.toggle("open");
 }
-
-
-
-
-
-
-
 
 
 

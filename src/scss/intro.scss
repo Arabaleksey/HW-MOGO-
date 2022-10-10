@@ -101,7 +101,6 @@
         display: flex;
         cursor: pointer;
         &.open > .intro__search-txt{
-            position: static;
             width: 240px;
             padding: 0 10px;
         }

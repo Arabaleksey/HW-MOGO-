@@ -2,24 +2,20 @@
     &__hr {
         margin-bottom: 87px;
     }
-
+    
     &__wrapper {
         display: flex;
-    justify-content: space-between;
-
-        &_one {
-            margin-bottom: 170px;
-        }
-        &_two {
-            padding-bottom: 105px;
-        }
+        flex-wrap: wrap;
+        margin: 0 -15px;
     }
 
-    &__item {
+    &__column {
+        flex: 0 1 370px;
         display: flex;
-    justify-content: space-between;
+        margin-bottom: 140px;
+        padding: 0 15px;
+        
     }
-
     &__img {
         align-self:flex-start;
         margin-right: 30px;
@@ -27,23 +23,28 @@
     }
 
     &__box {
-        padding-top: 18px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
         flex: 1 1 auto;
+        max-width: 270px;
+        
     }
 
     &__box-title {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 24px;
-    color: #2D3033;
-    margin-bottom: 35px;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 24px;
+        color: #2D3033;
+        margin-bottom: 35px;
     }
 
     &__box-subtitle {
         font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 18px;
-    color: #2D3033;
+        font-weight: 400;
+        font-size: 18px;
+        color: #2D3033;
+        width: 270px;
     }
-}
 
+}
