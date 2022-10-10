@@ -66,6 +66,26 @@ dot.forEach((elem)=>{
 var slideIndexIntro = 1;
 showSlidesIntro(slideIndexIntro);
 
+let next1 = document.querySelector('.intro__next1');
+let next2 = document.querySelector('.intro__next2');
+let next3 = document.querySelector('.intro__next3');
+let next4 = document.querySelector('.intro__next4');
+
+next1.addEventListener('click',()=>{
+    currentSlideIntro(1)
+  })
+  
+next2.addEventListener('click',()=>{
+    currentSlideIntro(2)
+  })
+next3.addEventListener('click',()=>{
+    currentSlideIntro(3)
+  })
+  
+next4.addEventListener('click',()=>{
+    currentSlideIntro(4)
+  })
+
 function currentSlideIntro(p) {
     showSlidesIntro(slideIndexIntro = p);
 }
