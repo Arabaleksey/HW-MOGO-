@@ -31,6 +31,7 @@
   "dependencies": {
     "@parcel/transformer-js": "^2.7.0",
     "@popperjs/core": "^2.11.6",
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.2.2",
     "jquery": "^3.6.1",
     "swiper": "^8.4.2"

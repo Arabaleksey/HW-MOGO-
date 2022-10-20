@@ -4,14 +4,15 @@
     &__wrapper{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        margin: 0 -15px;
+        justify-content: center;
     }
-
+    
     &__item {
-        display: flex;
         flex-direction: column;
-        max-width: 369px;
-        display: block;
+        flex: 0 1 370px;
+        display: flex;
+        padding: 0 15px;
     }
 
     &__item-link{
@@ -80,4 +81,85 @@
         font-size: 13px;
         color: #2D3033;
     }
+}
+
+
+@media screen and (max-width:1024px) {
+    .blog {
+        padding-bottom: 60px;
+    
+        &__wrapper{
+            margin: 0 -10px;
+        }
+        
+        &__item {
+            flex: 0 1 316px;
+            display: flex;
+            margin-bottom: 0px;
+            padding: 0 10px;
+        }
+    
+        &__picture {
+            position: relative;
+            &:after{
+                content: "";
+                position:absolute;
+                background-image: url('../img/blog2laptop.png');
+                left: -8px;
+                top: 130px;
+                width: 68px;
+                height: 68px;
+                
+            }
+            img{
+                width: 316px;
+                height: 214px;
+            }
+            
+        }
+    
+        &__item-title {
+            font-size: 18px;
+        }
+    
+        &__item-text {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+    
+        &__icon {
+            display: flex;
+            align-items: center;
+            &:first-child{
+                padding-right: 45px;
+            }
+        }
+        &__icon-view{
+            margin-top: 5px;
+            padding-right: 16px;
+        }
+        &__icon-comment{
+            margin-top: 5px;
+            padding-right: 16px;
+        }
+        &__icon-view{
+            width: 24px;
+            height: 34px;
+            padding-right: 0;
+            margin-right: 10px;
+        }
+        &__view {
+            font-size: 12px;
+        }
+        &__icon-comment{
+            width: 25px;
+            height: 25px;
+            padding-right: 0;
+            margin-right: 10px;
+        }
+        &__comments{
+            font-size: 12px;
+        }
+    }
+    
 }

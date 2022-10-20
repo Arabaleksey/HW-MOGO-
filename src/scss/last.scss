@@ -37,3 +37,30 @@
 
     }
 }
+
+@media screen and (max-width:1024px) {
+    .last {
+        height: 157px;
+        padding: 15px;
+        &__container {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+    
+        &__picture {
+            margin-bottom:0px;
+        }
+        &__icon{
+            width: 35px;
+            height: 53px;
+        }
+    
+    
+        &__hr {
+            margin-top: 20px;
+            margin-bottom: 0;
+    
+        }
+    }
+}

@@ -50,13 +50,37 @@
             left: 525px;
         }
     }
-
-    // &__phone {
-    //     position: relative;
-    //     display: block;
-    //     top:210px;
-    //     left:-160px;
-    // }
+}
+@media screen and (max-width:1024px) {
+    .unique {
+        height: 589px;
+    
+        &__designation{
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+    
+        &__hr {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        &__desk{
+            display: flex;
+            margin: 0 auto;
+            position: relative;
+            img{
+                width: 460px;
+                height: 356px;
+            }
+            &:after{
+                background-image: url(../img/unique4laptop.png);
+                width: 136px;
+                height: 279px;
+                top: 142px;
+                left: 353px;
+            }
+        }
+    }
 }
 
 

@@ -1,11 +1,19 @@
 .meet {
     &__wrapper {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        margin: 0 -15px;
+        justify-content: center;
     }
 
+    &__picture{
+        padding:0 15px;
+        display: flex;
+        flex: 0 1 370px;
+        flex-direction: column;
 
+        
+    }
     &__img{
         position: relative;
         &:hover:after{
@@ -82,5 +90,47 @@
         font-weight: 400;
         font-size: 18px;
         color:#2D3033;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .meet {
+        &__wrapper {
+            margin: 0 -10px;
+        }
+    
+        &__picture{
+            padding:0 10px;
+            flex: 0 1 318px;
+    
+            
+        }
+        &__img{
+            &:hover:after{
+                left: -3px;
+                top: -5px;
+            }
+            img{
+                width: 317px;
+                height: 359px;
+            }
+        }
+        &__links{
+            top: 167px;
+            left: 77px;
+        }
+        &__info {
+            padding-bottom: 58px;
+        }
+    
+        &__name {
+            font-size: 18px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        &__job {
+            font-weight: 400;
+            font-size: 14px;
+        }
     }
 }

@@ -1,34 +1,21 @@
 
-import * as bootstrap from 'bootstrap'
+import { Carousel } from 'bootstrap'
 
+let intro__hamb = document.querySelector(".intro__hamb")
+let navMenu = document.querySelector(".intro__bar-menu")
+let slideBox = document.querySelector(".carousel-inner")
+let bottom = document.querySelector(".carousel")
+let slidee = document.querySelector(".intro__slide")
 
-// import Swiper from 'swiper/swiper-bundle';
-// const swiper = new Swiper('.swiper', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
-  
-//     // If we need pagination
-//     pagination: {
-//       el: '.swiper-pagination',
-//       clickable:true,
-//     },
-  
-//     // Navigation arrows
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-  
-//     // And if we need scrollbar
-//     scrollbar: {
-//       el: '.swiper-scrollbar',
-//     },
+intro__hamb.addEventListener("click", mobileMenu);
 
-//     slidesPerView:1,
-//   });
-
-
+function mobileMenu() {
+    intro__hamb.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    slideBox.classList.toggle("active");
+    bottom.classList.toggle("active");
+    slidee.classList.toggle("active")
+}
 
 // DROPDOWN----------------
 let drop = document.querySelectorAll('.service__drop');
@@ -38,21 +25,6 @@ drop.forEach((elem)=>{
       elem.parentNode.querySelector('.service__drop').classList.toggle('active')
   })
 })
-
-
-
-
-
-let search = document.querySelector(".intro__search-box");
-
-search.addEventListener("click", searchMenu);
-
-function searchMenu() {
-    search.classList.toggle("open");
-}
-
-
-
 
 
 let dot = document.querySelectorAll('.intro__dot');
@@ -67,51 +39,51 @@ dot.forEach((elem)=>{
 
 
 // ПЕРВЫЙ СЛАЙДЕР-----------------------------------------
-var slideIndexIntro = 1;
-showSlidesIntro(slideIndexIntro);
+// var slideIndexIntro = 1;
+// showSlidesIntro(slideIndexIntro);
 
-let next1 = document.querySelector('.intro__next1');
-let next2 = document.querySelector('.intro__next2');
-let next3 = document.querySelector('.intro__next3');
-let next4 = document.querySelector('.intro__next4');
+// let next1 = document.querySelector('.intro__next1');
+// let next2 = document.querySelector('.intro__next2');
+// let next3 = document.querySelector('.intro__next3');
+// let next4 = document.querySelector('.intro__next4');
 
-next1.addEventListener('click',()=>{
-    currentSlideIntro(1)
-  })
+// next1.addEventListener('click',()=>{
+//     currentSlideIntro(1)
+//   })
   
-next2.addEventListener('click',()=>{
-    currentSlideIntro(2)
-  })
-next3.addEventListener('click',()=>{
-    currentSlideIntro(3)
-  })
+// next2.addEventListener('click',()=>{
+//     currentSlideIntro(2)
+//   })
+// next3.addEventListener('click',()=>{
+//     currentSlideIntro(3)
+//   })
   
-next4.addEventListener('click',()=>{
-    currentSlideIntro(4)
-  })
+// next4.addEventListener('click',()=>{
+//     currentSlideIntro(4)
+//   })
 
-function currentSlideIntro(p) {
-    showSlidesIntro(slideIndexIntro = p);
-}
+// function currentSlideIntro(p) {
+//     showSlidesIntro(slideIndexIntro = p);
+// }
 
-function showSlidesIntro(p) {
-    var u;
-    var slidesIntro = document.getElementsByClassName("intro__wrapper-block");
+// function showSlidesIntro(p) {
+//     var u;
+//     var slidesIntro = document.getElementsByClassName("intro__wrapper-block");
 
 
-    if (p > slidesIntro.length){
-        slideIndexIntro = 1
-    }
-    if (p < 1){
-        slideIndexIntro=slidesIntro.length
-    }
-    for (u=0; u <slidesIntro.length; u++){
-        slidesIntro[u].style.display= "none";
-    }
+//     if (p > slidesIntro.length){
+//         slideIndexIntro = 1
+//     }
+//     if (p < 1){
+//         slideIndexIntro=slidesIntro.length
+//     }
+//     for (u=0; u <slidesIntro.length; u++){
+//         slidesIntro[u].style.display= "none";
+//     }
    
 
-    slidesIntro[slideIndexIntro-1].style.display = "block";
-}
+//     slidesIntro[slideIndexIntro-1].style.display = "block";
+// }
 
 
 

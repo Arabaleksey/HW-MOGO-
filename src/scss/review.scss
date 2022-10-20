@@ -87,17 +87,17 @@
             padding-right:0px;
         }
     }
-    .fade{
-        -webkit-animation-name:fade;
+    .shadow{
+        -webkit-animation-name:shadow;
         -webkit-animation-duration: 1.5s;
-        animation-name: fade;
+        animation-name: shadow;
         animation-duration: 1.5s;
     }
-    @-webkit-keyframes fade{
+    @-webkit-keyframes shadow{
         from{opacity: .4}
         to {opacity: 1}
     }
-    @keyframes fade{
+    @keyframes shadow{
         from{opacity: .4}
         to {opacity: 1}
     }
@@ -105,6 +105,84 @@
 .review__box_second{
    padding: 30px;
 }
+
+@media screen and (max-width:1024px) {
+    .review {
+        padding: 28px;
+            &__container {
+                max-width: 992px;
+            }
+            &__img {
+                margin-right: 30px;
+                padding-left: 100px;
+                svg{
+                    width: 115px;
+                    height: 115px;
+                }
+            }
+            &__text {
+                font-size: 18px;
+                width: 655px;
+            }
+            &__text_sec{
+                color:rgb(72, 117, 98);
+            }
+            &__text_third{
+                color:rgb(83, 57, 148);
+            }
+        
+            &__block {
+                display: flex;
+                padding-top: 15px;
+            }
+        
+            &__hr {
+                width: 48px;
+                margin-right: 38px;
+            }
+        
+            &__name {
+                font-size: 24px;
+                padding-left: 0px;
+            }
+            &__prev, &__next{
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        .shadow{
+            -webkit-animation-name:shadow;
+            -webkit-animation-duration: 1.5s;
+            animation-name: shadow;
+            animation-duration: 1.5s;
+        }
+        @-webkit-keyframes shadow{
+            from{opacity: .4}
+            to {opacity: 1}
+        }
+        @keyframes shadow{
+            from{opacity: .4}
+            to {opacity: 1}
+        }
+        
+    .review__box_second{
+       padding: 30px;
+    }
+    .review__img_photo{
+        width: 115px;
+        height: 115px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+    .review__picture{
+        margin-left: 60px;
+        margin-right: 30px;
+    }
+}
+
 
 
     

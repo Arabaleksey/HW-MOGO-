@@ -14,3 +14,39 @@ padding: 42px 0px;
         align-items: center;
     }
 }
+@media screen and (max-width:1024px) {
+    .partners {
+        background-color: #F8F8F8;
+        padding: 45px 0px;
+        &__img_one{
+            width: 86px;
+            height: 86px;
+        }
+        &__img_two{
+            width: 86px;
+            height: 86px;
+           
+        }
+        &__img_three{
+            width: 48px;
+            height: 45px;
+           
+        }
+        &__img_four{
+            width: 54px;
+            height: 54px;
+         
+        }
+        &__img_five{
+            width: 46px;
+            height: 45px;
+            
+        }
+        &__img_six{
+            width: 86px;
+            height: 86px;
+           
+        }
+        
+        }
+}

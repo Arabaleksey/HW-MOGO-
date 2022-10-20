@@ -1,19 +1,24 @@
 .future {
     background-color: #95E1D3;
-    height: 250px;
-
-    &__container {
+    &__row{
         display: flex;
-        height: 100%;   
+        flex-wrap:wrap;
+        margin: 0 -0.5px;
     }
 
     &__box {
-        display: flex;
+    display: flex;
+    flex: 0 1 234px;
+    padding: 0 0.5px;
     flex-direction: column;
-    border-left:1px solid #fff;
+    align-items: center;
     border-right:1px solid #fff;
     width: 234px;
     justify-content:center;
+    height:250px;
+    &:first-child{
+        border-left:1px solid #fff;
+    }
     }
 
     &__value {
@@ -33,3 +38,21 @@
     }
 }
 
+@media screen and (max-width:1024px) {
+    .future {
+        &__box {
+        flex: 0 1 198px;
+        padding: 0 0.5px;
+        width: 198px;
+        height:167px;
+        }
+    
+        &__value {
+        font-size: 48px;
+        }
+    
+        &__text {
+        font-size: 18px;
+        }
+    }
+}

@@ -9,130 +9,113 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Accordion Item #1
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Accordion Item #2
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Accordion Item #3
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-          </div>
-        </div>
-      </div>
-
-
-
-
     <div class="intro">
         <div class="intro__container container">
             <div class="intro__bar">
                 <div class="intro__bar-logo">
-                    <img src="./img/MoGo.svg" alt="">
+                    <img class="intro__bar-img animate__animated animate__backInLeft" src="./img/MoGo.svg" alt="">
                 </div>
                 <nav class="intro__bar-menu">
                     <ul class="intro__bar-links">
-                        <li class="intro__bar-name"><a class="intro__bar-link" href="#">ABOUT</a></li>
-                        <li class="intro__bar-name"><a class="intro__bar-link" href="#">SERVICE</a></li>
-                        <li class="intro__bar-name"><a class="intro__bar-link" href="#">WORK</a></li>
-                        <li class="intro__bar-name"><a class="intro__bar-link" href="#">BLOG</a></li>
-                        <li class="intro__bar-name"><a class="intro__bar-link" href="#">CONTACT</a></li>
+                        <li class="intro__bar-name animate__animated animate__backInDown"><a class="intro__bar-link" href="#">ABOUT </a></li>
+                        <li class="intro__bar-name animate__animated animate__backInUp"><a class="intro__bar-link" href="#">SERVICE</a></li>
+                        <li class="intro__bar-name animate__animated animate__backInDown"><a class="intro__bar-link" href="#">WORK</a></li>
+                        <li class="intro__bar-name animate__animated animate__backInUp"><a class="intro__bar-link" href="#">BLOG</a></li>
+                        <li class="intro__bar-name animate__animated animate__backInDown"><a class="intro__bar-link" href="#">CONTACT</a></li>
                     </ul>
-                    <a class="intro__icon intro__icon_purchase" href=""><img src="./img/purchase.svg" alt=""></a>
-                    <div class="intro__search-box">
-                        <input type="text" class="intro__search-txt" type="text" name="text" placeholder="Type to search">
-                        <div class="intro__icon intro__icon_search"><img src="./img/search.svg" alt=""></div> 
-                    </div>
+                    <a class="intro__icon intro__icon_purchase animate__animated animate__backInUp" href=""><img class="intro__icon-svg" src="./img/purchase.svg" alt=""></a>
+                    <a class="intro__icon intro__icon_search animate__animated animate__backInDown" href=""><img class="intro__icon-svg" src="./img/search.svg" alt=""></a> 
                 </nav>
-            </div>
-            <div class="intro__swiper swiper">
-            <div class="intro__wrapper swiper-wrapper">
-                <div class="intro__wrapper-block fade swiper-slide">
-                    <h2 class="intro__designation designation">Creative Template</h2>
-                    <h1 class="intro__name">Welcome <br> to MoGo</h1>
-                    <hr class="intro__hr hr">
-                    <a class="intro__btn" href="#">LEARN MORE</a>
-                </div>
-                <div class="intro__wrapper-block fade swiper-slide">
-                    <h2 class="intro__designation designation">Creative Template</h2>
-                    <h1 class="intro__name">WORK</h1>
-                    <hr class="intro__hr hr">
-                    <a class="intro__btn" href="#">LEARN MORE</a>
-                </div>
-                <div class="intro__wrapper-block fade swiper-slide">
-                    <h2 class="intro__designation designation">Creative Template</h2>
-                    <h1 class="intro__name">ABOUT</h1>
-                    <hr class="intro__hr hr">
-                    <a class="intro__btn" href="#">LEARN MORE</a>
-                </div>
-                <div class="intro__wrapper-block fade swiper-slide">
-                    <h2 class="intro__designation designation">Creative Template</h2>
-                    <h1 class="intro__name">CONTACTS</h1>
-                    <hr class="intro__hr hr">
-                    <a class="intro__btn" href="#">LEARN MORE</a>
+
+                <div class="intro__hamb">
+                    <span class="intro__hamb-line"></span>
+                    <span class="intro__hamb-line"></span>
+                    <span class="intro__hamb-line"></span>
                 </div>
 
             </div>
-        </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="intro__wrapper-block ">
+                        <h2 class="intro__designation designation">Creative Template</h2>
+                        <h1 class="intro__name">Welcome <br> to MoGo</h1>
+                        <hr class="intro__hr hr">
+                        <a class="intro__btn" href="#">LEARN MORE</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="intro__wrapper-block ">
+                        <h2 class="intro__designation designation">Creative Template</h2>
+                        <h1 class="intro__name">WORK</h1>
+                        <hr class="intro__hr hr">
+                        <a class="intro__btn" href="#">LEARN MORE</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="intro__wrapper-block ">
+                        <h2 class="intro__designation designation">Creative Template</h2>
+                        <h1 class="intro__name">ABOUT</h1>
+                        <hr class="intro__hr hr">
+                        <a class="intro__btn" href="#">LEARN MORE</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="intro__wrapper-block ">
+                        <h2 class="intro__designation designation">Creative Template</h2>
+                        <h1 class="intro__name">CONTACTS</h1>
+                        <hr class="intro__hr hr">
+                        <a class="intro__btn" href="#">LEARN MORE</a>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+              </div>
             <br>
             <div class="intro__slide">
                 <div class="intro__slider">
-                <span class="intro__dot intro__next1">
-                    <hr class="intro__hr-slide1">
-                    <hr class="intro__hr-slide2">
-                    <div class="intro__text-slide">
-                        <p>01 <span class="intro__text-slide_span" >INTRO</span></p>
-                    </div>
-                </span>
-            </div>
-            <div class="intro__slider">
-                <span class="intro__dot intro__next2">
-                    <hr class="intro__hr-slide1">
-                    <hr class="intro__hr-slide2">
-                    <div class="intro__text-slide">
-                        <p>02 <span class="intro__text-slide_span">WORK</span></p>
-                    </div>
-                </span>
-            </div>
-            <div class="intro__slider">
-                <span class="intro__dot intro__next3">
-                    <hr class="intro__hr-slide1">
-                    <hr class="intro__hr-slide2">
-                    <div class="intro__text-slide">
-                        <p>03 <span class="intro__text-slide_span" >ABOUT</span></p>
-                    </div>
-                </span>
-            </div>
-            <div class="intro__slider">
-                <span class="intro__dot intro__next4">
-                    <hr class="intro__hr-slide1">
-                    <hr class="intro__hr-slide2">
-                    <div class="intro__text-slide">
-                        <p>04 <span class="intro__text-slide_span" >CONTACTS</span></p>
-                    </div>
-                </span>
-            </div>
+                    <span class="intro__dot intro__next1">
+                        <hr class="intro__hr-slide1">
+                        <div class="intro__text-slide">
+                            <p>01 <span class="intro__text-slide_span" >INTRO</span></p>
+                        </div>
+                    </span>
+                </div>
+                <div class="intro__slider">
+                    <span class="intro__dot intro__next2">
+                        <hr class="intro__hr-slide1">
+                        <div class="intro__text-slide">
+                            <p>02 <span class="intro__text-slide_span">WORK</span></p>
+                        </div>
+                    </span>
+                </div>
+                <div class="intro__slider">
+                    <span class="intro__dot intro__next3">
+                        <hr class="intro__hr-slide1">
+                        <div class="intro__text-slide">
+                            <p>03 <span class="intro__text-slide_span" >ABOUT</span></p>
+                        </div>
+                    </span>
+                </div>
+                <div class="intro__slider">
+                    <span class="intro__dot intro__next4">
+                        <hr class="intro__hr-slide1">
+                        <div class="intro__text-slide">
+                            <p>04 <span class="intro__text-slide_span" >CONTACTS</span></p>
+                        </div>
+                    </span>
+                </div>
             </div>
         </div>
     </div>
@@ -140,10 +123,11 @@
     <div class="story">
         <div class="story__container container">
             <h3 class="story__designation designation">What we do</h3>
-            <h2 class="story__title title">story about us</h2>
+            <h2 class="story__title title ">story about us</h2>
             <hr class="story__hr hr">
-            <p class="story__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim <br> dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
+            <p class="story__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
             <div class="story__wrapper">
+                <div class="story__row">
                     <div class="story__picture">
                         <img src="./img/story__one.png" alt="" class="story__img">
                         <div class="story__inner">
@@ -155,26 +139,31 @@
                             </a>
                         </div>
                     </div>
-                <div class="story__picture">
-                    <img src="./img/story__two.png" alt="" class="story__img">
-                    <div class="story__inner">
-                        <a href="#" class="story__img-in">
-                            <div class="story__icon">
-                                <img src="./img/story__icon.svg" alt="">
-                            </div>
-                            <p class="story__super">SUPER TEAM</p>
-                        </a>
+                </div>
+                <div class="story__row">
+                    <div class="story__picture">
+                        <img src="./img/story__two.png" alt="" class="story__img">
+                        <div class="story__inner">
+                            <a href="#" class="story__img-in">
+                                <div class="story__icon">
+                                    <img src="./img/story__icon.svg" alt="">
+                                </div>
+                                <p class="story__super">SUPER TEAM</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="story__picture">
-                    <img src="./img/story__three.png" alt="" class="story__img">
-                    <div class="story__inner">
-                        <a href="#" class="story__img-in">
-                            <div class="story__icon">
-                                <img src="./img/story__icon.svg" alt="">
-                            </div>
-                            <p class="story__super">SUPER TEAM</p>
-                        </a>
+                <div class="story__row">
+                     <div class="story__picture">
+                        <img src="./img/story__three.png" alt="" class="story__img">
+                        <div class="story__inner">
+                            <a href="#" class="story__img-in">
+                                <div class="story__icon">
+                                    <img src="./img/story__icon.svg" alt="">
+                                </div>
+                                <p class="story__super">SUPER TEAM</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -183,25 +172,27 @@
 
     <div class="future">
         <div class="future__container container">
-            <div class="future__box">
-                <p class="future__value">42</p>
-                <p class="future__text">Lorem ipsum</p> 
-            </div>
-            <div class="future__box">
-                <p class="future__value">123</p>
-                <p class="future__text">Lorem ipsum</p> 
-            </div>
-            <div class="future__box">
-                <p class="future__value">15</p>
-                <p class="future__text">Lorem ipsum</p> 
-            </div>
-            <div class="future__box">
-                <p class="future__value">99</p>
-                <p class="future__text">Lorem ipsum</p> 
-            </div>
-            <div class="future__box">
-                <p class="future__value">24</p>
-                <p class="future__text">Lorem ipsum</p> 
+            <div class="future__row">
+                <div class="future__box">
+                    <p class="future__value">42</p>
+                    <p class="future__text">Lorem ipsum</p> 
+                </div>
+                <div class="future__box">
+                    <p class="future__value">123</p>
+                    <p class="future__text">Lorem ipsum</p> 
+                </div>
+                <div class="future__box">
+                    <p class="future__value">15</p>
+                    <p class="future__text">Lorem ipsum</p> 
+                </div>
+                <div class="future__box">
+                    <p class="future__value">99</p>
+                    <p class="future__text">Lorem ipsum</p> 
+                </div>
+                <div class="future__box">
+                    <p class="future__value">24</p>
+                    <p class="future__text">Lorem ipsum</p> 
+                </div>
             </div>
         </div>
     </div>
@@ -400,7 +391,7 @@
 
     <div class="review">
         <div class="review__container container">
-                <div class="review__box review__box_one fade">
+                <div class="review__box review__box_one shadow">
                     <div class="review__wrapper">
                         <div class="review__img">
                         <svg width="170" height="170" viewBox="0 0 170 170" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -421,7 +412,7 @@
                     </div>
                 </div>
 
-                <div class="review__box review__box_two fade">
+                <div class="review__box review__box_two shadow">
                     <div class="review__wrapper">
                         <div class="review__img">
                             <svg width="170" height="170" viewBox="0 0 170 170" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -442,7 +433,7 @@
                     </div>
                 </div>
 
-                <div class="review__box review__box_three fade">
+                <div class="review__box review__box_three shadow">
                     <div class="review__wrapper">
                         <div class="review__img">
                             <svg width="170" height="170" viewBox="0 0 170 170" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -701,24 +692,24 @@
     <div class="partners">
         <div class="partners__container container">
            <div class="partners__wrapper">
-            <div class="partners__picture">
-                <img src="./img/partner1.svg" alt="">
-            </div>
-            <div class="partners__picture">
-                <img src="./img/partner2.svg" alt="">
-            </div>
-            <div class="partners__picture">
-                <img src="./img/partner3.svg" alt="">
-            </div>
-            <div class="partners__picture">
-                <img src="./img/partner4.svg" alt="">
-            </div>
-            <div class="partners__picture">
-                <img src="./img/partner5.svg" alt="">
-            </div>
-            <div class="partners__picture">
-                <img src="./img/partner6.svg" alt="">
-            </div>
+                <div class="partners__picture">
+                    <img class="partners__img partners__img_one" src="./img/partner1.svg" alt="">
+                </div>
+                <div class="partners__picture">
+                    <img class="partners__img partners__img_two" src="./img/partner2.svg" alt="">
+                </div>
+                <div class="partners__picture">
+                    <img class="partners__img partners__img_three" src="./img/partner3.svg" alt="">
+                </div>
+                <div class="partners__picture">
+                    <img class="partners__img partners__img_four" src="./img/partner4.svg" alt="">
+                </div>
+                <div class="partners__picture">
+                    <img class="partners__img partners__img_five" src="./img/partner5.svg" alt="">
+                </div>
+                <div class="partners__picture">
+                    <img class="partners__img partners__img_six" src="./img/partner6.svg" alt="">
+                </div>
            </div>
         </div>
     </div>
@@ -741,7 +732,7 @@
                     <a href="#" class="works__img-in">
                         <div class="works__inner">
                             <div class="works__icon-in">
-                                <img src="./img/work__icon.svg" alt="">
+                                <img class="works__pict" src="./img/work__icon.svg" alt="">
                             </div>
                             <div class="works__text-inner">
                                 <p class="works__tex-in">CREATIVELY DESIGN</p>
@@ -755,7 +746,7 @@
                     <a href="#" class="works__img-in">
                         <div class="works__inner">
                             <div class="works__icon-in">
-                                <img src="./img/work__icon.svg" alt="">
+                                <img class="works__pict" src="./img/work__icon.svg" alt="">
                             </div>
                             <div class="works__text-inner">
                                 <p class="works__tex-in">CREATIVELY DESIGN</p>
@@ -771,7 +762,7 @@
                     <a href="#" class="works__img-in">
                         <div class="works__inner">
                             <div class="works__icon-in">
-                                <img src="./img/work__icon.svg" alt="">
+                                <img class="works__pict" src="./img/work__icon.svg" alt="">
                             </div>
                             <div class="works__text-inner">
                                 <p class="works__tex-in">CREATIVELY DESIGN</p>
@@ -785,7 +776,7 @@
                     <a href="#" class="works__img-in">
                         <div class="works__inner">
                             <div class="works__icon-in">
-                                <img src="./img/work__icon.svg" alt="">
+                                <img  class="works__pict" src="./img/work__icon.svg" alt="">
                             </div>
                             <div class="works__text-inner">
                                 <p class="works__tex-in">CREATIVELY DESIGN</p>
@@ -797,11 +788,11 @@
             </div>
             <div class="works__column works__column_three">
                 <div class="works__img">
-                    <img class="works__icon" src="./img/work3.png" alt="">
+                    <img class="works__icon works__icon__big" src="./img/work3.png" alt="">
                     <a href="#" class="works__img-in">
                         <div class="works__inner works__inner_tall">
                             <div class="works__icon-in">
-                                <img src="./img/work__icon.svg" alt="">
+                                <img class="works__pict" src="./img/work__icon.svg" alt="">
                             </div>
                             <div class="works__text-inner">
                                 <p class="works__tex-in">CREATIVELY DESIGN</p>
@@ -817,7 +808,7 @@
                     <a href="#" class="works__img-in">
                         <div class="works__inner">
                             <div class="works__icon-in">
-                                <img src="./img/work__icon.svg" alt="">
+                                <img class="works__pict" src="./img/work__icon.svg" alt="">
                             </div>
                             <div class="works__text-inner">
                                 <p class="works__tex-in">CREATIVELY DESIGN</p>
@@ -831,7 +822,7 @@
                     <a href="#" class="works__img-in">
                         <div class="works__inner">
                             <div class="works__icon-in">
-                                <img src="./img/work__icon.svg" alt="">
+                                <img class="works__pict" src="./img/work__icon.svg" alt="">
                             </div>
                             <div class="works__text-inner">
                                 <p class="works__tex-in">CREATIVELY DESIGN</p>
@@ -846,9 +837,11 @@
 
    <div class="review review__two">
         <div class="review__container container">
-            <div class="review__box_second review__box_one fade">
+            <div class="review__box_second review__box_one shadow">
                 <div class="review__wrapper">
-                    <img class="review__img" src="./img/review__icon2.svg" alt="">
+                    <div class="review__picture">
+                        <img class="review__img review__img_photo" src="./img/review__icon2.svg" alt="">
+                    </div>
                         <div class="review__info">
                             <p class="review__text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
@@ -861,9 +854,11 @@
                     </div>
             </div>
 
-                <div class="review__box_second review__box_two fade">
+                <div class="review__box_second review__box_two shadow">
                     <div class="review__wrapper">
-                        <img class="review__img" src="./img/review__icon2.svg" alt="">
+                        <div class="review__picture">
+                            <img class="review__img review__img_photo" src="./img/review__icon2.svg" alt="">
+                        </div>
                             <div class="review__info">
                                 <p class="review__text review__text_sec">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
@@ -876,9 +871,11 @@
                         </div>
                 </div>
 
-                <div class="review__box_second review__box_three fade">
+                <div class="review__box_second review__box_three shadow">
                     <div class="review__wrapper">
-                        <img class="review__img" src="./img/review__icon2.svg" alt="">
+                        <div class="review__picture">
+                            <img class="review__img review__img_photo" src="./img/review__icon2.svg" alt="">
+                        </div>
                             <div class="review__info">
                                 <p class="review__text review__text_third">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
@@ -993,76 +990,76 @@
             </h2>
             <hr class="blog__hr hr">
             <div class="blog__wrapper">
-            <div class="blog__item">
-                <a href="" class="blog__item-link">
-                    <div class="blog__pucture">
-                        <img class="blog__img" src="./img/blog1.png" alt="">
-                    </div>
-                    <p class="blog__item-title">
-                        LOREM IPSUM DOLOR SIT AMET
-                    </p>
-                    <p class="blog__item-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
-                    </p>
-                </a>
-                <div class="blog__icons">
-                    <div class="blog__icon">
-                        <a href="#"><img class="blog__icon-view" src="./img/blog3.svg" alt=""></a>
-                        <p class="blog__view">542</p>
-                    </div>
-                    <div class="blog__icon">
-                        <a href="#"><img class="blog__icon-comment" src="./img/blog4.svg" alt=""></a>
-                        <p class="blog__comments">17</p>
-                    </div>
-                </div>
-            </div>
-            <div class="blog__item">
-                <a href="" class="blog__item-link">
-                    <div class="blog__pucture">
-                        <img class="blog__img" src="./img/blog1.png" alt="">
-                    </div>
-                    <p class="blog__item-title">
-                        LOREM IPSUM DOLOR SIT AMET
-                    </p>
-                    <p class="blog__item-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
-                    </p>
-                </a>
-                <div class="blog__icons">
-                    <div class="blog__icon">
-                        <a href="#"><img class="blog__icon-view" src="./img/blog3.svg" alt=""></a>
-                        <p class="blog__view">542</p>
-                    </div>
-                    <div class="blog__icon">
-                        <a href="#"><img class="blog__icon-comment" src="./img/blog4.svg" alt=""></a>
-                        <p class="blog__comments">17</p>
-                        
+                <div class="blog__item">
+                    <a href="" class="blog__item-link">
+                        <div class="blog__picture">
+                            <img class="blog__img" src="./img/blog1.png" alt="">
+                        </div>
+                        <p class="blog__item-title">
+                            LOREM IPSUM DOLOR SIT AMET
+                        </p>
+                        <p class="blog__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+                        </p>
+                    </a>
+                    <div class="blog__icons">
+                        <div class="blog__icon">
+                            <a href="#"><img class="blog__icon-view" src="./img/blog3.svg" alt=""></a>
+                            <p class="blog__view">542</p>
+                        </div>
+                        <div class="blog__icon">
+                            <a href="#"><img class="blog__icon-comment" src="./img/blog4.svg" alt=""></a>
+                            <p class="blog__comments">17</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="blog__item">
-                <a href="" class="blog__item-link">
-                    <div class="blog__pucture">
-                        <img class="blog__img" src="./img/blog1.png" alt="">
-                    </div>
-                    <p class="blog__item-title">
-                        LOREM IPSUM DOLOR SIT AMET
-                    </p>
-                    <p class="blog__item-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
-                    </p>
-                </a>
-                <div class="blog__icons">
-                    <div class="blog__icon">
-                        <a href="#"><img class="blog__icon-view" src="./img/blog3.svg" alt=""></a>
-                        <p class="blog__view">542</p>
-                    </div>
-                    <div class="blog__icon">
-                        <a href="#"><img class="blog__icon-comment" src="./img/blog4.svg" alt=""></a>
-                        <p class="blog__comments">17</p>
+                <div class="blog__item">
+                    <a href="" class="blog__item-link">
+                        <div class="blog__picture">
+                            <img class="blog__img" src="./img/blog1.png" alt="">
+                        </div>
+                        <p class="blog__item-title">
+                            LOREM IPSUM DOLOR SIT AMET
+                        </p>
+                        <p class="blog__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+                        </p>
+                    </a>
+                    <div class="blog__icons">
+                        <div class="blog__icon">
+                            <a href="#"><img class="blog__icon-view" src="./img/blog3.svg" alt=""></a>
+                            <p class="blog__view">542</p>
+                        </div>
+                        <div class="blog__icon">
+                            <a href="#"><img class="blog__icon-comment" src="./img/blog4.svg" alt=""></a>
+                            <p class="blog__comments">17</p>
+                            
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="blog__item">
+                    <a href="" class="blog__item-link">
+                        <div class="blog__picture">
+                            <img class="blog__img" src="./img/blog1.png" alt="">
+                        </div>
+                        <p class="blog__item-title">
+                            LOREM IPSUM DOLOR SIT AMET
+                        </p>
+                        <p class="blog__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+                        </p>
+                    </a>
+                    <div class="blog__icons">
+                        <div class="blog__icon">
+                            <a href="#"><img class="blog__icon-view" src="./img/blog3.svg" alt=""></a>
+                            <p class="blog__view">542</p>
+                        </div>
+                        <div class="blog__icon">
+                            <a href="#"><img class="blog__icon-comment" src="./img/blog4.svg" alt=""></a>
+                            <p class="blog__comments">17</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1094,7 +1091,7 @@
                 <hr class="footer__hr-up">
                 <div class="footer__links">
                 <p class="footer__follow">Follow us</p>
-                <div class="footer__social">
+                <div class="footer__social footer__social_comp">
                     <a class="footer__icon" href="#"><img src="./img/footer__facebook.svg" alt=""></a>
                     <a class="footer__icon" href="#"><img src="./img/footer__twitter.svg" alt=""></a>
                     <a class="footer__icon" href="#"><img src="./img/footer__instagram.svg" alt=""></a>
@@ -1103,6 +1100,16 @@
                     <a class="footer__icon" href="#"><img src="./img/footer__youtube.svg" alt=""></a>
                     <a class="footer__icon" href="#"><img src="./img/footer__dribble.svg" alt=""></a>
                     <a class="footer__icon" href="#"><img src="./img/footer__tiktok.svg" alt=""></a>
+                </div>
+                <div class="footer__social footer__social_laptop">
+                    <a class="footer__icon" href="#"><img src="./img/facebook(laptop).svg" alt=""></a>
+                    <a class="footer__icon" href="#"><img src="./img/twitter(laptop).svg" alt=""></a>
+                    <a class="footer__icon" href="#"><img src="./img/instagram(laptop).svg" alt=""></a>
+                    <a class="footer__icon" href="#"><img src="./img/pinterest(laptop).svg" alt=""></a>
+                    <a class="footer__icon" href="#"><img src="./img/linkedin(laptop).svg" alt=""></a>
+                    <a class="footer__icon" href="#"><img src="./img/youtube(laptop).svg" alt=""></a>
+                    <a class="footer__icon" href="#"><img src="./img/dribble(laptop).svg" alt=""></a>
+                    <a class="footer__icon" href="#"><img src="./img/tiktok(laptop).svg" alt=""></a>
                 </div>
                 </div>
                 <form class="footer__form" method="post">
