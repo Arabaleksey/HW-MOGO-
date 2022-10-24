@@ -64,3 +64,30 @@
         }
     }
 }
+
+@media screen and (max-width:320px) {
+    .last {
+        height: 231px;
+        padding: 42px;
+    
+        &__picture {
+            margin-bottom:20px;
+        }
+        &__icon{
+            width: 43px;
+            height: 53px;
+        }
+    
+        &__title {
+            color: #F38281;
+            font-size: 24px;
+        }
+    
+        &__hr {
+            margin-top: 50px;
+            margin-bottom: 0;
+            width: 134px;
+    
+        }
+    }
+}

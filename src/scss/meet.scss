@@ -5,14 +5,14 @@
         margin: 0 -15px;
         justify-content: center;
     }
-
+    &__photo-mob{
+        display: none;
+    }
     &__picture{
         padding:0 15px;
         display: flex;
         flex: 0 1 370px;
         flex-direction: column;
-
-        
     }
     &__img{
         position: relative;
@@ -133,4 +133,55 @@
             font-size: 14px;
         }
     }
+}
+
+@media screen and (max-width:320px) {
+    .meet {
+        &__picture{
+            flex: 0 1 288px;  
+        }
+        &__links{
+            z-index: 1;
+            display: flex;
+            position:absolute;
+            top: 194px;
+            left: 114px;
+        }
+        
+        &__link{
+            margin-right: 1px;
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+        &__photo{
+            display: none;
+        }
+        &__photo-mob{
+            display: block;
+        }
+        &__img{
+            &:hover:after{
+                display: none;
+            }
+            img{
+                width: 288px;
+                height: 236px;
+            }
+        }
+        &__info {
+            padding-bottom: 35px;
+        }
+    
+        &__name {
+            font-size: 18px;
+            padding-top: 18px;
+            padding-bottom: 23px;
+        }
+    
+        &__job {
+            font-size: 14px;
+        }
+    }
+    
 }

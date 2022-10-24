@@ -5,48 +5,104 @@ padding: 42px 0px;
     }
 
     &__wrapper {
-        display: flex;
-        justify-content: space-between;
+        width: 100%;
+        text-align: center;
     }
-
+    &__row{
+        display: flex;
+        flex-wrap:wrap;
+        margin: 0 -40px;
+        justify-content: center;
+    }
     &__picture {
         display: flex;
+        flex: 0 1 127px;
         align-items: center;
+        padding: 0 40px;
+    }
+    &__img{
+        width: 127px;
+        height: 127px;
     }
 }
 @media screen and (max-width:1024px) {
     .partners {
         background-color: #F8F8F8;
         padding: 45px 0px;
-        &__img_one{
+        &__row{
+            margin: 0 -20px;
+        }
+        &__picture{
+            padding: 0 20px;
+        }
+        &__img{
             width: 86px;
             height: 86px;
-        }
-        &__img_two{
-            width: 86px;
-            height: 86px;
-           
-        }
-        &__img_three{
-            width: 48px;
-            height: 45px;
-           
-        }
-        &__img_four{
-            width: 54px;
-            height: 54px;
-         
-        }
-        &__img_five{
-            width: 46px;
-            height: 45px;
-            
-        }
-        &__img_six{
-            width: 86px;
-            height: 86px;
-           
         }
         
+        }
+}
+
+
+
+@media screen and (max-width:320px) {
+    .partners {
+        background-color: #F8F8F8;
+        padding: 30px 0px;
+            &__container {
+            }
+        
+            &__row {
+                display: flex;
+                flex-wrap:wrap;
+                margin: 0 -30px;
+                justify-content: center;
+            }
+        
+            &__picture {
+                display: flex;
+                align-items: center;
+                padding: 0 30px;
+            }
+            &__picture-five {
+                img{
+                    width: 288px;
+                }
+            }
+            &__img{
+                display: flex;
+                width: 86px;
+                height: 86px;
+            }
+            &__picture-one{
+                order:1;
+
+            }
+            &__picture-two{
+                order:2;
+                
+            }
+            &__picture-three{
+                order:5;
+                
+            }
+            &__picture-four{
+                order:4;
+                
+            }
+            &__picture-five{
+                order:3;
+                width: 100%;
+                img{
+                    margin: 0 auto;
+                    
+                }
+
+                
+            }
+            &__picture-six{
+                order:6;
+                
+            }
         }
 }

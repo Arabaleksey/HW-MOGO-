@@ -90,3 +90,40 @@
     
     }
 }
+
+@media screen and (max-width:320px) {
+    .amazing {
+        &__hr {
+            margin-bottom: 70px;
+            width: 144px;
+        }
+        &__designation{
+            padding-top:55px;
+        }
+        &__column {
+            flex: 0 1 288px;
+            margin-bottom: 50px;
+            
+        }
+        &__img {
+            margin-right: 25px;
+            flex: 0 0 45px;
+        }
+    
+        &__box {
+            padding-top: 15px;
+            max-width: 211px;
+        }
+    
+        &__box-title {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+    
+        &__box-subtitle {
+            font-size: 14px;
+            width: 211px;
+        }
+    
+    }
+}

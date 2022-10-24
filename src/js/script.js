@@ -37,60 +37,15 @@ dot.forEach((elem)=>{
 
 
 
-
-// ПЕРВЫЙ СЛАЙДЕР-----------------------------------------
-// var slideIndexIntro = 1;
-// showSlidesIntro(slideIndexIntro);
-
-// let next1 = document.querySelector('.intro__next1');
-// let next2 = document.querySelector('.intro__next2');
-// let next3 = document.querySelector('.intro__next3');
-// let next4 = document.querySelector('.intro__next4');
-
-// next1.addEventListener('click',()=>{
-//     currentSlideIntro(1)
-//   })
-  
-// next2.addEventListener('click',()=>{
-//     currentSlideIntro(2)
-//   })
-// next3.addEventListener('click',()=>{
-//     currentSlideIntro(3)
-//   })
-  
-// next4.addEventListener('click',()=>{
-//     currentSlideIntro(4)
-//   })
-
-// function currentSlideIntro(p) {
-//     showSlidesIntro(slideIndexIntro = p);
-// }
-
-// function showSlidesIntro(p) {
-//     var u;
-//     var slidesIntro = document.getElementsByClassName("intro__wrapper-block");
-
-
-//     if (p > slidesIntro.length){
-//         slideIndexIntro = 1
-//     }
-//     if (p < 1){
-//         slideIndexIntro=slidesIntro.length
-//     }
-//     for (u=0; u <slidesIntro.length; u++){
-//         slidesIntro[u].style.display= "none";
-//     }
-   
-
-//     slidesIntro[slideIndexIntro-1].style.display = "block";
-// }
-
-
-
-// СЛАЙДЕР ВТОРОЙ-----------------------------
+// СЛАЙДЕР ПЕРВЫЙ-----------------------------
 
 let prevBtn = document.querySelector('.review__prevBtn');
 let aftBtn = document.querySelector('.review__aftBtn');
+let dotOne = document.querySelector('.review__dot-one');
+let dotTwo = document.querySelector('.review__dot-two');
+let dotThree = document.querySelector('.review__dot-three');
+let dotFour = document.querySelector('.review__dot-four');
+let dotFive = document.querySelector('.review__dot-five');
 
 
 prevBtn.addEventListener('click',()=>{
@@ -100,7 +55,21 @@ prevBtn.addEventListener('click',()=>{
 aftBtn.addEventListener('click',()=>{
     plusSlides(1)
   })
-
+dotOne.addEventListener('click',()=>{
+    currentSlide(1)
+})
+dotTwo.addEventListener('click',()=>{
+    currentSlide(2)
+})
+dotThree.addEventListener('click',()=>{
+    currentSlide(3)
+})
+dotFour.addEventListener('click',()=>{
+    currentSlide(4)
+})
+dotFive.addEventListener('click',()=>{
+    currentSlide(5)
+})
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -117,6 +86,7 @@ function currentSlide(n) {
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("review__box");
+    var dots = document.getElementsByClassName("review__dot")
 
     if (n > slides.length){
         slideIndex = 1
@@ -127,19 +97,28 @@ function showSlides(n) {
     for (i=0; i <slides.length; i++){
         slides[i].style.display= "none";
     }
-    
+    for (i=0; i < dots.length; i++){
+        dots[i].className= dots[i].className.replace('active',"");
+
+    }
 
     slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className+= " active";
 }
 
 
 
 
 
-// СЛАЙДЕР ТРЕТИЙ-----------------------------
+// СЛАЙДЕР ВТОРОЙ-----------------------------
 
 let prevBtn2 = document.querySelector('.review__prevBtn2');
 let aftBtn2 = document.querySelector('.review__aftBtn2');
+let dotOne2 = document.querySelector('.review__dot-one2');
+let dotTwo2 = document.querySelector('.review__dot-two2');
+let dotThree2 = document.querySelector('.review__dot-three2');
+let dotFour2 = document.querySelector('.review__dot-four2');
+let dotFive2 = document.querySelector('.review__dot-five2');
 
 
 prevBtn2.addEventListener('click',()=>{
@@ -149,10 +128,25 @@ prevBtn2.addEventListener('click',()=>{
 aftBtn2.addEventListener('click',()=>{
     plusSlidesSec(1)
   })
-
+dotOne2.addEventListener('click',()=>{
+    currentSlideSec(1)
+})
+dotTwo2.addEventListener('click',()=>{
+    currentSlideSec(2)
+})
+dotThree2.addEventListener('click',()=>{
+    currentSlideSec(3)
+})
+dotFour2.addEventListener('click',()=>{
+    currentSlideSec(4)
+})
+dotFive2.addEventListener('click',()=>{
+    currentSlideSec(5)
+})
 
   var slideIndexSec = 1;
   showSlidesSec(slideIndexSec);
+
   function plusSlidesSec(x){
       showSlidesSec(slideIndexSec += x);
   }
@@ -163,7 +157,8 @@ aftBtn2.addEventListener('click',()=>{
   
   function showSlidesSec(x) {
       var k;
-      var slidesSec = document.getElementsByClassName("review__box_second");
+      var slidesSec = document.getElementsByClassName("review__box-second");
+      var dots2 = document.getElementsByClassName("review__dot2")
   
       if (x > slidesSec.length){
           slideIndexSec = 1
@@ -174,8 +169,13 @@ aftBtn2.addEventListener('click',()=>{
       for (k=0; k <slidesSec.length; k++){
           slidesSec[k].style.display= "none";
       }
+      for (i=0; i < dots2.length; i++){
+        dots2[i].className= dots2[i].className.replace('active',"");
+
+    }
   
       slidesSec[slideIndexSec-1].style.display = "block";
+      dots2[slideIndexSec-1].className+= " active";
 }
 
 

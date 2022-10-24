@@ -1,7 +1,9 @@
 .review {
     background-color: #F8F8F8;
     padding: 42px 0;
-    
+    br{
+        display: none;
+    }
         &__container {
             position: relative;
             max-width: 1170px;
@@ -36,7 +38,12 @@
         &__text_third{
             color:rgb(83, 57, 148);
         }
-    
+        &__text_four{
+            color:rgb(72, 117, 98);
+        }
+        &__text_five{
+            color:rgb(161, 12, 60);
+        }
         &__block {
             display: flex;
             padding-top: 40px;
@@ -60,9 +67,6 @@
             padding-left: 56px;
             margin:0;
         }
-        &__img-go {
-            display: block;
-        }
         
         &__prev-img{
             margin: 0 auto;
@@ -85,6 +89,23 @@
             border-radius:3px 0 0 3px;
             padding-left: 3px;
             padding-right:0px;
+        }
+        &__dots, &__dots2{
+            text-align: center;
+            display: none;
+        }
+        &__dot, &__dot2{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            border: 1px solid #C6CBCD;
+            transition:0.3s;
+            cursor: pointer;
+            margin-right: 15px;
+            &.active{
+                background-color: #C6CBCD;
+            }
         }
     }
     .shadow{
@@ -124,12 +145,7 @@
                 font-size: 18px;
                 width: 655px;
             }
-            &__text_sec{
-                color:rgb(72, 117, 98);
-            }
-            &__text_third{
-                color:rgb(83, 57, 148);
-            }
+         
         
             &__block {
                 display: flex;
@@ -152,20 +168,7 @@
                 }
             }
         }
-        .shadow{
-            -webkit-animation-name:shadow;
-            -webkit-animation-duration: 1.5s;
-            animation-name: shadow;
-            animation-duration: 1.5s;
-        }
-        @-webkit-keyframes shadow{
-            from{opacity: .4}
-            to {opacity: 1}
-        }
-        @keyframes shadow{
-            from{opacity: .4}
-            to {opacity: 1}
-        }
+
         
     .review__box_second{
        padding: 30px;
@@ -183,6 +186,91 @@
     }
 }
 
+@media screen and (max-width:320px) {
 
+    .review {
+        padding: 30px 0;
+        br{
+            display: block;
+        }
+            &__container {
+                max-width: 288px;
+            }
+            &__img {
+                display: none;
+            }
+            &__text {
+                font-size: 14px;
+                width: 288px;
+                margin-top:0;
+            }
+            &__block {
+                padding-top: 30px;
+            }
+        
+            &__hr {
+                width: 48px;
+                margin-right: 38px;
+            }
+        
+            &__name {
+                font-size: 18px;
+            }
+            &__prev, &__next{
+                display: none;
+            }
+            &__dots, &__dots2{
+                text-align: center;
+                display: block;
+            }
+        }
+        .shadow{
+            -webkit-animation-name:shadow;
+            -webkit-animation-duration: 1.5s;
+            animation-name: shadow;
+            animation-duration: 1.5s;
+        }
+        @-webkit-keyframes shadow{
+            from{opacity: .4}
+            to {opacity: 1}
+        }
+        @keyframes shadow{
+            from{opacity: .4}
+            to {opacity: 1}
+        }
+    .review__two{
+        hr{
+            width: 57px;
+            margin-right: 30px;
+        }
+    }
+    .review__img_photo{
+        display: block;
+        width: 115px;
+        height: 115px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+    .review__picture_second{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .review__wrapper_second{
+        display: flex;
+        flex-direction: column;
+        width: 288px;
+    }
+    .review__info_second{
+        width: 288px;
+    }
 
+}
+
+.review__two{
     
+}
+
+

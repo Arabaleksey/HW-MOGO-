@@ -51,6 +51,12 @@
         top: 276px;
 
     }
+    &__icon_sevenMob{
+        display: none;
+    }
+    &__icon_fourMob{
+        display: none;
+    }
     &__icon-in{
         margin: 0 auto;
     }
@@ -105,4 +111,113 @@
             height: 30px;
         }
     }
+}
+
+@media screen and (max-width:320px) {
+    .works {
+        &__columns {
+            display: flex;
+            justify-content: center;  
+            flex-wrap: wrap;
+        }
+    
+        &__column {
+            display: flex;
+            flex-direction: column;
+    
+        }
+    
+        &__icon{
+            vertical-align: middle;
+            width: 159px;
+            height: 152px;
+        }
+        &__icon__big{
+            height: 456px;
+        }
+        &__icon_seven{
+            display: none;
+        }
+        &__icon_sevenMob{
+            display: block;
+        }
+        &__icon_four{
+            display:none;
+        }
+        &__icon_fourMob{
+            display: block;
+            width: 319px;
+        }
+
+        &__column_one{
+            order:1;
+            height: 304px;
+
+        }
+        &__column_two{
+            order:4;
+
+        }
+        
+        &__column_three{
+            order:2;
+            flex-direction: column-reverse;
+
+        }
+
+        &__column_four{
+            order:3;
+
+        }
+
+
+        
+    
+        &__img{
+            position: relative;
+            &:hover:after{
+                display: none;
+            }
+            & > .works__img-in{
+                display: none;
+            }
+            &:hover > .works__img-in{
+                display: none;
+            }
+        }
+        &__inner{
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            position:absolute;
+            top: 116px;
+            left: 70px;
+        }
+        &__inner_tall{
+            top: 276px;
+    
+        }
+        &__icon-in{
+            margin: 0 auto;
+        }
+        &__text-inner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 60px;
+        & > .works__tex-in:first-child{
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 24px;
+            color: #FFFFFF;
+        }
+        & > .works__tex-in:last-child{
+            font-family: 'Raleway';
+            font-weight: 400;
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+        }
+    }
+    
 }

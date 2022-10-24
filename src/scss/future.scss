@@ -56,3 +56,36 @@
         }
     }
 }
+
+@media screen and (max-width:320px) {
+    .future { 
+        &__row{
+            justify-content: center;
+        }
+        &__box {
+        flex: 0 1 144px;
+        width: 144px;
+        height:124px;
+        border-bottom:1px solid #fff;
+        border-left:none;
+        justify-content:center;
+        border-right:none;
+        &:first-child{
+            border-right:none;
+            border-left:none;
+        }
+        &:last-child{
+            border-bottom:none;
+        }
+        }
+    
+        &__value {
+        font-size: 48px;
+        margin-bottom: 20px;
+        }
+    
+        &__text {
+        font-size: 18px;
+        }
+    }
+}
