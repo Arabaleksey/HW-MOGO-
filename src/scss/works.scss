@@ -114,11 +114,11 @@
 }
 
 @media screen and (max-width:320px) {
-    .works {
+    .works {        
         &__columns {
-            display: flex;
             justify-content: center;  
             flex-wrap: wrap;
+            width: 320px;
         }
     
         &__column {
