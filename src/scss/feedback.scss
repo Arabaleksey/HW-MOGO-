@@ -135,7 +135,8 @@
                     &__wrapper {
                     display: flex;
                     flex-wrap: wrap;
-                    margin: 0 -30px;
+                    margin: 0;
+                    width: 100%;
                     justify-content: center;
                     }
         
@@ -143,7 +144,7 @@
                     flex: 0 1 286px;
                     display: flex;
                     margin-bottom: 40px;
-                    padding: 0 30px;
+                    padding: 0x;
                     flex-direction: column;
                     text-align: center;
                     align-items: center;
